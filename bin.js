@@ -1,14 +1,14 @@
-#!/usr/bin/env node
+#!/usr/bin/env electron
 
-var dti = require('./')
+const dti = require('./')
+const {app} = require('electron')
+const argv = require('minimist')(process.argv.slice(2))
 
-var argv = require('minimist')(process.argv.slice(2))
-
-var command = argv._.shift()
+const command = argv._.shift()
 
 switch (command) {
   case 'list':
-    // list available
+    Object.keys(dti.tools).forEach(tool => console.log(tool))
     break
   case 'installed':
     // list installed
@@ -19,7 +19,14 @@ switch (command) {
   case 'uninstall':
     // uninstall the listed plugins
     break
-  default
-    // list usage
+  default:
+    console.log(`
+      list - list available devtools
+      installed - list installed devtools
+      install devtool1 devtool2... - install devtools
+      uninstall devtool1 devtool2... - uninstall devtools
+    `)
     break
 }
+
+app.quit()

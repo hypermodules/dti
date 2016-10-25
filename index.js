@@ -1,6 +1,7 @@
-var edi = require('electron-devtools-installer')
+const edi = require('electron-devtools-installer')
+const devtron = require('devtron')
 
-var tools = {
+const tools = {
   ember: {
     installer: 'edi',
     id: edi.EMBER_INSPECTOR
@@ -10,27 +11,27 @@ var tools = {
     id: edi.REACT_DEVELOPER_TOOLS
   },
   backbone: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.BACKBONE_DEBUGGER
   },
   jquery: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.JQUERY_DEBUGGER
   },
   angular: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.ANGULARJS_BATARANG
   },
   vuejs: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.VUEJS_DEVTOOLS
   },
   redux: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.REDUX_DEVTOOLS
   },
   reactPerf: {
-    installer: 'edi'
+    installer: 'edi',
     id: edi.REACT_PERF
   },
   devtron: {
@@ -39,3 +40,19 @@ var tools = {
 }
 
 module.exports.tools = tools
+
+const installers = {
+  devtron: installDevtron,
+  edi: installEDI
+}
+
+function installDevtron (opts, cb) {
+  devtron.install()
+  process.nextTick(cb)
+}
+
+function installEDI (opts, cb) {}
+
+function uninstall (opts, cb) {}
+
+

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/hypermodules/dti#readme",
   "dependencies": {
+    "devtron": "^1.4.0",
     "electron": "^1.4.4",
     "electron-devtools-installer": "^2.0.1",
     "minimist": "^1.2.0"
