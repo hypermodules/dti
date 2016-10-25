@@ -1,5 +1,6 @@
 const edi = require('electron-devtools-installer')
 const devtron = require('devtron')
+const {BrowserWindow} = require('electron')
 
 const tools = {
   ember: {
@@ -39,7 +40,7 @@ const tools = {
   }
 }
 
-module.exports.tools = tools
+exports.tools = tools
 
 const installers = {
   devtron: installDevtron,
@@ -55,4 +56,8 @@ function installEDI (opts, cb) {}
 
 function uninstall (opts, cb) {}
 
+function installed () {
+  return BrowserWindow.getDevToolsExtensions()
+}
 
+exports.installed = installed

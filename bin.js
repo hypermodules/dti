@@ -12,7 +12,7 @@ function cli (cb) {
       Object.keys(dti.tools).forEach(tool => console.log(tool))
       break
     case 'installed':
-      // list installed
+      console.log(dti.installed())
       break
     case 'install':
       // install the following plugins
@@ -21,15 +21,14 @@ function cli (cb) {
       // uninstall the listed plugins
       break
     default:
-      console.log(`dti - electron devtools installer
-        list - list available devtools
-        installed - list installed devtools
-        install devtool1 devtool2... - install devtools
-        uninstall devtool1 devtool2... - uninstall devtools
-      `)
+      console.log(
+`dti - electron devtools installer
+  list - list available devtools
+  installed - list installed devtools
+  install devtool1 devtool2... - install devtools
+  uninstall devtool1 devtool2... - uninstall devtools`)
       break
   }
-
   cb()
 }
 
