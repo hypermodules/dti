@@ -1,0 +1,29 @@
+{
+  "name": "dti",
+  "version": "1.0.0",
+  "description": "Electron Devtools Installer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypermodules/dti.git"
+  },
+  "keywords": [
+    "cli",
+    "electron",
+    "devtools"
+  ],
+  "author": "Bret Comnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypermodules/dti/issues"
+  },
+  "homepage": "https://github.com/hypermodules/dti#readme",
+  "dependencies": {
+    "electron": "^1.4.4",
+    "electron-devtools-installer": "^2.0.1",
+    "minimist": "^1.2.0"
+  }
+}
