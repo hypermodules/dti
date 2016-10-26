@@ -3,6 +3,8 @@
 const dti = require('./')
 const {app} = require('electron')
 const argv = require('minimist')(process.argv.slice(2))
+const inspect = require('util').inspect
+const usage = require('./usage')
 
 const command = argv._.shift()
 
@@ -10,27 +12,29 @@ function cli (cb) {
   switch (command) {
     case 'list':
       Object.keys(dti.tools).forEach(tool => console.log(tool))
-      break
+      return cb()
     case 'installed':
-      console.log(dti.installed())
-      break
+      const installed = dti.installed()
+      for (const key in installed) {
+        const name = dti.longNames[key] ? dti.longNames[key] : key
+        console.log(`${name}: ${inspect(installed[key])}`)
+      }
+      return cb()
     case 'install':
-      // install the following plugins
+      dti.install(argv._, err => {
+        if (err) {
+          console.error(err)
+        }
+        return cb()
+      })
       break
     case 'uninstall':
-      // uninstall the listed plugins
-      break
+      dti.uninstall(argv._)
+      return cb()
     default:
-      console.log(
-`dti - electron devtools installer
-  list - list available devtools
-  installed - list installed devtools
-  install devtool1 devtool2... - install devtools
-  uninstall devtool1 devtool2... - uninstall devtools`)
-      break
+      console.log(usage)
+      return cb()
   }
-  cb()
 }
-
 
 app.on('ready', cli.bind(null, app.quit))

@@ -1,13 +1,13 @@
 {
   "name": "dti",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Electron Devtools Installer",
   "main": "index.js",
   "bin": {
     "dti": "./cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "dependency-check . && standard | snazzy"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,12 @@
     "devtron": "^1.4.0",
     "electron": "^1.4.4",
     "electron-devtools-installer": "^2.0.1",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "run-series": "^1.1.4"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.5.0"
   }
 }
