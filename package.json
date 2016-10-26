@@ -1,7 +1,7 @@
 {
   "name": "dti",
   "version": "1.0.0",
-  "description": "Electron Devtools Installer",
+  "description": "Command-line Electron Developer Tools Installer.",
   "main": "index.js",
   "bin": {
     "dti": "./cli.js"
@@ -16,7 +16,10 @@
   "keywords": [
     "cli",
     "electron",
-    "devtools"
+    "devtools",
+    "developer",
+    "tools",
+    "installer"
   ],
   "author": "Bret Comnes",
   "license": "MIT",
