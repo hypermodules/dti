@@ -1,7 +1,7 @@
 # dti
 [![Build Status](https://travis-ci.org/hypermodules/dti.svg?branch=master)](https://travis-ci.org/hypermodules/dti)
 
-electron devtools installer
+Command-line [Electron](https://github.com/electron/electron) Developer Tools Installer.
 
 - List out developer tools that are available for electron.
 - List what devtools you have installed, and what version is installed.
