@@ -1,6 +1,6 @@
 {
   "name": "dti",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Electron Devtools Installer",
   "main": "index.js",
   "bin": {
