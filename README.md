@@ -35,3 +35,7 @@ dti <command> [<args>]
 ### See also
 
 - [electron-devtools-installer](https://www.npmjs.com/package/electron-devtools-installer)
+
+### License
+
+[MIT](LICENSE)
