@@ -30,7 +30,9 @@ dti <command> [<args>]
 
 ### FAQ
 
-- "Why is this a global CLI tool, and why does it bundle electron?":  `electron`/`electron-prebuilt` installs developer tools in a shared preference folder.  As a result, devtools are shared between different development projects on your system.  Project local dependencies are generally preferable but electron happens to just work this way.
+#### Why is this a global CLI tool, and why does it bundle electron?
+
+`electron`/`electron-prebuilt` installs developer tools in a shared preference folder.  As a result, devtools are shared between different development projects on your system.  Project local dependencies are generally preferable but electron happens to just work this way.
 
 ### See also
 
