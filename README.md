@@ -26,7 +26,21 @@ dti <command> [<args>]
   installed             list currently installed devtools and their versions
   install <args>        install devtools using a list of short names
   uninstall <args>      uninstall devtools using a list of short names
+
+  Example: dti install devtron react redux
 ```
+
+Currently supported devtools:
+
+- angular
+- backbone
+- devtron
+- ember
+- jquery
+- react
+- reactPerf
+- redux
+- vuejs
 
 ### FAQ
 

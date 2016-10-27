@@ -7,4 +7,6 @@ module.exports = `dti <command> [<args>]
   install <args>        install devtools using a list of short names
   uninstall <args>      uninstall devtools using a list of short names
 
+  Example: dti install devtron react redux
+
 Please send bugs and PRs to https://github.com/hypermodules/dti`
