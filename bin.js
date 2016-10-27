@@ -11,7 +11,7 @@ const command = argv._.shift()
 function cli (cb) {
   switch (command) {
     case 'list':
-      Object.keys(dti.tools).forEach(tool => console.log(tool))
+      Object.keys(dti.tools).sort().forEach(tool => console.log(tool))
       return cb()
     case 'installed':
       const installed = dti.installed()
