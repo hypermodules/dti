@@ -35,8 +35,8 @@
     "run-series": "^1.1.4"
   },
   "devDependencies": {
-    "dependency-check": "^2.6.0",
+    "dependency-check": "^2.7.0",
     "snazzy": "^5.0.0",
-    "standard": "^8.5.0"
+    "standard": "^8.6.0"
   }
 }
