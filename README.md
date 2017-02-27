@@ -48,6 +48,10 @@ Currently supported devtools:
 
 `electron`/`electron-prebuilt` installs developer tools in a shared preference folder.  As a result, devtools are shared between different development projects on your system.  Project local dependencies are generally preferable but electron happens to just work this way.
 
+#### Why didn't it work?
+
+Make sure you quit out of any running processes of electron/electron-prebuilt.  Sometimes the install silently fails if these are running.  
+
 ### See also
 
 - [electron-devtools-installer](https://www.npmjs.com/package/electron-devtools-installer)
