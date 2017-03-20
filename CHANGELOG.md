@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## Unreleased
 
-- Add example to usage instructions
+- Add example to usage instructions.
+- Always update to the latest version of devtools when installing.
 
 ## [1.0.2](https://github.com/hypermodules/dti/releases/v1.0.2)
 
