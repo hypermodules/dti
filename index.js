@@ -72,7 +72,7 @@ function installDevtron (toolObj, cb) {
 }
 
 function installEDI (toolObj, cb) {
-  installExtension(toolObj.id).then(name => {
+  installExtension(toolObj.id, true).then(name => {
     console.log(`installed ${name}`)
     return cb(null)
   }).catch(err => {
