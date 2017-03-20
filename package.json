@@ -32,7 +32,8 @@
     "electron": "^1.4.7",
     "electron-devtools-installer": "^2.0.1",
     "minimist": "^1.2.0",
-    "run-series": "^1.1.4"
+    "run-series": "^1.1.4",
+    "update-notifier": "^2.1.0"
   },
   "devDependencies": {
     "dependency-check": "^2.7.0",
