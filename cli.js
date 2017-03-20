@@ -3,6 +3,10 @@
 var electron = require('electron')
 var path = require('path')
 var proc = require('child_process')
+var updateNotifier = require('update-notifier')
+var pkg = require('./package.json')
+
+updateNotifier({pkg}).notify()
 
 var binPath = path.join(__dirname, 'bin.js')
 
