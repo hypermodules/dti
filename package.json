@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "dependency-check": "^2.7.0",
-    "snazzy": "^6.0.0",
-    "standard": "^9.0.2"
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   }
 }
