@@ -1,6 +1,5 @@
 # dti
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hypermodules/dti.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/hypermodules/dti.svg?branch=master)](https://travis-ci.org/hypermodules/dti)
 
 Command-line [Electron](https://github.com/electron/electron) Developer Tools Installer.
