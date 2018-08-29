@@ -1,7 +1,7 @@
 #!/usr/bin/env electron
 
 const dti = require('./')
-const {app} = require('electron')
+const { app } = require('electron')
 const argv = require('minimist')(process.argv.slice(2))
 const inspect = require('util').inspect
 const usage = require('./usage')

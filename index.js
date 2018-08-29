@@ -1,7 +1,7 @@
 const edi = require('electron-devtools-installer')
-const {default: installExtension} = edi
+const { default: installExtension } = edi
 const devtron = require('devtron')
-const {BrowserWindow} = require('electron')
+const { BrowserWindow } = require('electron')
 const series = require('run-series')
 
 const tools = {
